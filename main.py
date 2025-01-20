@@ -25,3 +25,23 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+name = input('What is your name?')
+age = input('How old are you?')
+print(f'Hello, {name}')
+consent = input('Would you like to continue our conversations?')
+if consent = no
+    break 
+else: 
+    help? = input(Can I help you?')
+    if help? = yes
+        print('How can I help?')
+    else print("Have a good day, goodbye.')
+
+        
+
+
+    
+    
+    
+    
