@@ -26,21 +26,35 @@ def main():
 if __name__ == "__main__":
     main()
     
-name = input('What is your name?')
-age = input('How old are you?')
-print(f'Hello, {name}')
-consent = input('Would you like to continue our conversations?')
-if consent = no
-    break 
-else: 
-    help? = input(Can I help you?')
-    if help? = yes
-        print('How can I help?')
-    else print("Have a good day, goodbye.')
-
+def start_conversation ():
+   while True: 
+    name = input("What is your name? ") 
+    age = input("How old are you? ") 
+    print(f"Hello, {name}!") 
+    consent = input("Would you like to continue our conversations? (yes/no) ") 
+    if consent.lower() == 'no': 
+        print("Goodbye!") 
+        break 
+    else: 
+        help_response = input("Can I help you? (yes/no) ").strip().lower() 
+        if help_response.lower() == 'yes': 
+            curious = input("How can I help?") 
         
-
-
+        else: 
+            print("Have a good day, goodbye.")
+            break 
+def menu ():
+    print('Below are instructions to navigatng this conversation')
+    print('1. Start conversation')
+    print('2. Exit')
+    choice = input('Pick the number of the option that you would like.')
+    if choice == '1':
+        start_conversation()
+    elif choice == '2':
+        print('Goodbye')
+        return
+    
+menu()
     
     
     
